@@ -1,0 +1,499 @@
+:root {
+    --color-brand: red;
+    --color-main: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--color-main);
+     font-size: 18px;
+     line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6,
+p{
+    margin-top: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hidden {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+h6 {
+    border: 12px solid var(--color-main);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.buttons__link {
+    color: red;
+    text-decoration: none;
+}
+
+.navig__link {
+        color: var(--color-main);
+        text-decoration: none;
+}
+
+.navig__link:hover {
+    color: var(--color-brand);
+}
+
+.Why-us{
+    padding-top: 96px;
+}
+
+.inform__menu {
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.inform__menu:hover {
+    color: var(--color-brand);
+}
+
+
+.nav__link {
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--color-brand);
+}
+
+.main__section {
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 83vh;
+    background-size: cover;
+    background-image: url('../Images/wallpaper2_large.png');
+    padding: 372px 0;
+}
+
+/* Header */
+
+
+
+.header-item{
+    margin-right: 64px;
+}
+
+.header-item:last-child{
+    margin-right: 0;
+}
+
+.header-menu{
+    display: flex;
+flex-grow: 1;
+    justify-content: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-container {
+    display: flex;
+    gap: 40px;
+}
+
+.main__title {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: var(--color-main);
+    font-family: Rubik Glitch;
+    text-align: center;
+    text-decoration: none;
+    font-size: 128px;
+    text-transform: uppercase;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 78.997%;
+        text-shadow: 1px 1px 2px red;
+}
+
+.main__title .accent {
+    color: red;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.section__title{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.3;
+    
+}
+
+.why-us{
+    margin-bottom: 42px;
+}
+
+.picture__child {
+    width: 50%;
+    /* задає ширину контейнера, в якому зображення */
+}
+
+
+
+.picture__child img {
+    width: 100%;
+    /* зображення заповнить всю ширину контейнера */
+    height: auto;
+    /* зберігає пропорції */
+}
+
+.whyus-container{
+    display: flex;
+        gap: 100px;
+        justify-content: center;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.section_bust{
+    padding: 80px 0;
+    margin-bottom: 100px;
+}
+
+
+.section .accent  {
+    color: var(--color-brand);
+font-weight: 900;
+line-height: 1.3;
+}
+
+.owr-busterxs-title{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 80px;
+}
+
+.P_sdealt {
+    
+}
+
+
+.P_sdealt .plati__osn {
+    color: red;
+}
+
+.button {    
+    margin-right: 24px;
+    gap: 32px;
+    color: red;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 64px;
+    width: 175px;
+    height: 52px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    /* Добавляем плавный переход */
+}
+
+.button:last-child {
+    gap: 32px;
+        color: red;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 64px;
+        width: 175px;
+        height: 52px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+
+        /* Добавляем плавный переход */
+}
+
+.button:hover {
+    background-color: rgb(29, 29, 29);
+    /* Цвет фона при наведении */
+    color: red;
+    /* Цвет текста при наведении */
+    border: 2px solid black;
+    /* Цвет границы при наведении */
+}
+
+.button:last-child:hover{
+        background-color: rgb(29, 29, 29);
+        /* Цвет фона при наведении */
+        color: red;
+        /* Цвет текста при наведении */
+        border: 2px solid black;
+        /* Цвет границы при наведении */
+    }
+
+.dark-theme .button {
+    background-color: white;
+    /* Цвет фона при наведении */
+    color: red;
+    /* Изменяем цвет текста для темной темы */
+    background-color: rgb(29, 29, 29);
+    /* Изменяем цвет фона для темной темы */
+}
+
+.button:last-child .button{
+        background-color: white;
+        /* Цвет фона при наведении */
+        color: red;
+        /* Изменяем цвет текста для темной темы */
+        background-color: rgb(29, 29, 29);
+        /* Изменяем цвет фона для темной темы */
+    }
+
+
+.button:hover {
+    background-color: white;
+    /* Цвет фона при наведении */
+    color: red;
+    /* Цвет текста при наведении */
+    border: 2px solid rgb(29, 29, 29);
+    /* Цвет границы при наведении */
+}
+
+.button:last-child:hover {
+    background-color: white;
+        /* Цвет фона при наведении */
+        color: red;
+        /* Цвет текста при наведении */
+        border: 2px solid rgb(29, 29, 29);
+        /* Цвет границы при наведении */
+}
+
+
+
+.advantages-section{
+padding: 16px 0;
+    background-color: red;
+}
+
+.advantagest__list{
+    display: flex;
+    justify-content: space-around;
+        background-size: contain;
+}
+
+.advantagest__item {
+    
+  font-size: 20px;
+  line-height: 30px;
+  
+}
+
+.busters_title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cost__bust {
+    font-size: 28px;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.format-rang {
+    padding: 12px;
+    border: 2px solid yellowgreen;
+    border-radius: 16px;
+}
+
+.format-bust {
+    padding: 12px;
+        background-repeat: no-repeat;
+            background-position: center top;
+        
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            height: 43vh;
+            background-size: cover;
+    background-image: url(../Images/Kalyan.webp);
+    border: 2px solid orange;
+    border-radius: 16px;
+}
+
+.format-agents {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 43vh;
+    background-size: cover;
+    background-image: url(../Images/Potapenko.jpg);
+    border: 2px solid blue;
+    border-radius: 16px;
+}
+
+.format-rang-strash{
+        padding: 12px;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20vh;
+            background-size: cover;
+            background-image: url(../Images/Hahahaha.png);
+            border: 2px solid black;
+            border-radius: 6px;
+}
+
+.format-rang-hero{
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../Images/OHOHOHOOH.png);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.format-rang-archon {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../Images/IHAHAHAHA.png);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.format-rang-legend {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../Images/gagagagga.png);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.format-rang-vlast {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../Images/IGIGIIGIGIGI.png);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.format-rang-yboshestvo {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../Images/HEHEHEHEHEHHE.png);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.format-rang-divine {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../Images/EGFEGEGEGEGGEGE.png);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.format-rang-titan {
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 20vh;
+    background-size: cover;
+    background-image: url(../Images/OGOGOGOGOGO.png);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.rang-chace {
+    padding: 12px;
+        
+}
+
+.rang-chace-herold{
+        padding: 12px;
+}
+
+.rang-chace-guardian {
+    padding: 12px;
+}
+
+.formats-list {
+    gap: 60px;
+    flex-basis: fill;;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.formats-item {
+    flex-basis: calc(100% / 3);
+}
+
+.rang-list{
+    gap: 60px;
+    justify-content: center;
+        flex-basis: fill;
+        flex-wrap: wrap;
+        display: flex;
+}
+
+.reng-items {
+    flex-basis: calc(100% / 4);
+}
+
+.formats-bust{
+        flex-basis: calc(100% / 6);
+}
+
+.formats-agents {
+    flex-basis: calc(100% / 6);
+}
+
+.rang-average{
+    width: 524px;
+    height: 200;
+}
+
+.footer-bra{
+    display: flex;
+}
